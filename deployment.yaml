@@ -1,0 +1,22 @@
+kind: Deployment
+apiVersion: apps/v1
+
+metadata:
+  name: xfe
+
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: xfe
+  template:
+    metadata:
+      labels: 
+        app: xfe
+    spec:
+      containers:
+      - name: xfe
+        image: ai2k7/xfe:release
+        ports:
+        - containerPort: 80
+

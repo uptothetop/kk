@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Gdansk",
+    "sea": true
+  }, {
+    "name": "Warszawa",
+    "sea": false
+  }
+]
